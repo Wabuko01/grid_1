@@ -1,0 +1,44 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-gap: 3px;
+  background-color: rgb(10, 10, 87);
+  color: aliceblue;
+  font-family: monospace;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "h h h h"
+    "w b v e"
+    "c o t p";
+  align-items: center;
+}
+.header {
+  grid-area: h;
+  text-align: center;
+  font-size: xx-large;
+}
+.work {
+  grid-area: w;
+}
+.break {
+  grid-area: b;
+}
+.vacation {
+  grid-area: v;
+}
+.equal {
+  grid-area: e;
+}
+.career {
+  grid-area: c;
+}
+.competitive {
+  grid-area: o;
+}
+.training {
+  grid-area: t;
+}
+.option {
+  grid-area: p;
+}
